@@ -3,7 +3,6 @@ using namespace std;
 class Solution {
   public:
     vector<int> shortestPath(int V, vector<vector<int>> &edges, int src, int dest) {
-        // Code here
         vector<vector<pair<int,int>>>l(V);
         for(auto t:edges){
             l[t[0]].push_back({t[1],t[2]});
